@@ -1,4 +1,4 @@
-# **🔐 CyberArk Privileged Account Lifecycle Management**
+# **🔐 CyberArk Privileged Account Lifecycle Management** 
 
 A practical walkthrough of end-to-end CyberArk Privileged Access Management (PAM) workflows — from onboarding privileged accounts to applying platform policies, rotating credentials, and launching monitored PSM sessions.
 
@@ -9,7 +9,6 @@ A practical walkthrough of end-to-end CyberArk Privileged Access Management (PAM
 ---
 
 ## 🎯 **Objective**
-
 
 Demonstrate core CyberArk PAS lifecycle operations, including:
 
@@ -31,11 +30,10 @@ Log in to the Password Vault Web Access (PVWA) portal:
 **PVWA Dashboard — central hub for PAM operations 🧭**  
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c0a59876-e4b6-4cb5-a09d-425a1f9893ed" alt="PVWA-CPM-PSM-2025-11-10-14-59-07" style="width:75%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/c0a59876-e4b6-4cb5-a09d-425a1f9893ed" alt="PVWA Dashboard" style="width:75%; height:auto;" />
 </div>
 
 ---
-
 
 ## **Step 2 — Created Privileged Accounts**
 
@@ -66,53 +64,51 @@ On the VM:
 
 ---
 
+## **Step 4 — Configure Platform Policies**
 
-## **Step 4 — Onboard Privileged Accounts**
+Cloned the Windows platform in PVWA and configured key settings:
 
-Go to **PVWA → Accounts View → Add Account**
+- Password complexity  
+- Password rotation 
+- Reconcile account settings  
 
-For each account:
+**Platform policy configured for password lifecycle automation ⚙️**  
+<img width="1920" height="1080" alt="PVWA-CPM-PSM-2025-11-10-15-42-26" src="https://github.com/user-attachments/assets/9be9118f-bf43-47d4-98ba-7f64a9e1a812" />
+
+---
+
+## **Step 5 — Assign Safe Permissions**
+
+Prepared the Safe by configuring role-based access controls for members:
+
+- List Accounts  
+- Retrieve Accounts  
+- Use Accounts  
+- Manage Safe (optional, admin-level)  
+
+*Screenshot shows Safe members before adding the demo users.*  
+
+<img width="1920" height="1080" alt="PVWA-CPM-PSM-2025-11-10-16-33-02" src="https://github.com/user-attachments/assets/8f2faa43-d8a2-44c6-a7da-f4e4db1a3cfa" />
+
+
+---
+
+## **Step 6 — Onboard Privileged Accounts**
+
+Go to **PVWA → Accounts View → Add Account** to add the demo users:
 
 - **Platform:** WindowsLocal_Admin  
 - **Address:** `10.0.0.3`  
 - **User:** `LocalAdmin_Server1` / `Service_Account_SQL`  
 - **Secret:** Temporary password  
 
-**Privileged account added and secured in the Vault ✅**  
-<img width="1920" height="1080" alt="PVWA-CPM-PSM-2025-11-10-15-11-24" src="https://github.com/user-attachments/assets/33ba173a-a0da-4d44-88f8-05c97276d367" />
-<img width="1920" height="1080" alt="PVWA-CPM-PSM-2025-11-10-16-17-20" src="https://github.com/user-attachments/assets/a1aa1a46-87a4-4602-af54-21dbe98fad41" />
+**Privileged accounts added and secured in the Vault ✅**  
 
----
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/33ba173a-a0da-4d44-88f8-05c97276d367" alt="Onboard Account 1" style="width:75%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/8c19888f-7189-4c68-a5b2-2372e8bdd57b" alt="Onboard Account 2" style="width:75%; height:auto;" />
+</div>
 
-## **Step 5 — Assign Safe Permissions**
-
-Navigate to **PVWA → Safes → IT_Admins_Safe → Members**
-
-Assign appropriate permissions:
-
-- List Accounts  
-- Retrieve Accounts  
-- Use Accounts  
-- Manage Safe (optional, admin-level)
-
-**RBAC permissions applied to Safe members 👥🔒**  
-![Screenshot](SS_05_Safe_Members.png)
-
----
-
-## **Step 6 — Configure Platform Policies**
-
-Go to **PVWA → Administration → Platform Management**
-
-Best practice: **Clone the Windows platform**, then configure:
-
-- Password complexity  
-- Password rotation (e.g., every 7 days)  
-- Reconcile account settings  
-- Privileged commands (optional)  
-
-**Platform policy configured for password lifecycle automation ⚙️**  
-![Screenshot](SS_06_Platform_Config.png)
 
 ---
 
@@ -127,7 +123,7 @@ Monitor real-time CPM status in:
 **Monitoring → CPM Jobs**
 
 **CPM verification and rotation successfully executed 🔁**  
-![Screenshot](SS_07_CPM_Reconcile_Success.png)
+<img width="1920" height="1080" alt="PVWA-CPM-PSM-2025-11-19-02-22-02" src="https://github.com/user-attachments/assets/ccc553fa-d89d-40f8-ad3c-a580c921416f" />
 
 ---
 
@@ -144,14 +140,11 @@ During a PSM session:
 - Keystrokes and actions are monitored  
 
 **PSM privileged session initiated and monitored 🎥**  
-![Screenshot](SS_08_PSM_Connect.png)
 
----
-
-## **Final PSM Recording View**
-
-**Active PSM session with recording enabled ⭐**  
-![Screenshot](SS_09_PSM_Session_Recording.png)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a859d8ae-af4a-4954-be2e-fcc7f198dcba" alt="Enter PSM Reason" style="width:75%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/7396d53e-b03e-47f7-832e-eaa115a5cd2a" alt="PSM Session Successful Launch" style="width:75%; height:auto;" />
+</div>
 
 ---
 
@@ -165,4 +158,4 @@ By the end of this hands-on lifecycle demonstration, I successfully:
 ⚙️ Configured platform policies for automated password rotation  
 🔁 Executed CPM Verify/Change workflows for credential lifecycle  
 🖥️ Launched monitored PSM sessions without ever exposing passwords  
-🎥 Reviewed audit logs and session recordings for compliance  
+🎥 Reviewed audit logs and session recordings for compliance
