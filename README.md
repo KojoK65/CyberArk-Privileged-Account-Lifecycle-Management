@@ -3,10 +3,11 @@
 A practical walkthrough of end-to-end CyberArk Privileged Access Management (PAM) workflows — from onboarding privileged accounts to applying platform policies, rotating credentials, and launching monitored PSM sessions.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c72d5b37-7967-4962-99ae-6cfdc75c0851" alt="Overview Image" style="width:50%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/c72d5b37-7967-4962-99ae-6cfdc75c0851" alt="Overview Image" width="300" />
 </div>
 
 ---
+
 
 
 ## 🎯 **Objective**
