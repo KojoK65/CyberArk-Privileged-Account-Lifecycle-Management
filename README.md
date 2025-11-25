@@ -83,10 +83,9 @@ Prepared the Safe by configuring role-based access controls for members:
 
 - List Accounts  
 - Retrieve Accounts  
-- Use Accounts  
-- Manage Safe (optional, admin-level)  
-
-*Screenshot shows Safe members before adding the demo users.*  
+- Use Accounts
+  
+*Safe members before adding the demo users.*
 
 <img width="1920" height="1080" alt="PVWA-CPM-PSM-2025-11-10-16-33-02" src="https://github.com/user-attachments/assets/8f2faa43-d8a2-44c6-a7da-f4e4db1a3cfa" />
 
@@ -100,7 +99,6 @@ Go to **PVWA → Accounts View → Add Account** to add the demo users:
 - **Platform:** WindowsLocal_Admin  
 - **Address:** `10.0.0.3`  
 - **User:** `LocalAdmin_Server1` / `Service_Account_SQL`  
-- **Secret:** Temporary password  
 
 **Privileged accounts added and secured in the Vault ✅**  
 
@@ -114,18 +112,17 @@ Go to **PVWA → Accounts View → Add Account** to add the demo users:
 
 ## **Step 7 — Trigger CPM Verify/Change**
 
-To initiate password rotation:
+Validated and rotated the password:
 
-**PVWA → Safes → Accounts → LocalAdmin_Server1 → CPM Actions → Verify / Change**
+**PVWA → Accounts View → LocalAdmin_Server1 → CPM Actions → Verify / Change**
 
-Monitor real-time CPM status in:
+**Password verified and reconciled successfully 🔁**  
 
-**Monitoring → CPM Jobs**
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/ccc553fa-d89d-40f8-ad3c-a580c921416f" alt="CPM Verify/Change Success" style="width:75%; height:auto;" />
+</div>
 
-**CPM verification and rotation successfully executed 🔁**  
-<img width="1920" height="1080" alt="PVWA-CPM-PSM-2025-11-19-02-22-02" src="https://github.com/user-attachments/assets/ccc553fa-d89d-40f8-ad3c-a580c921416f" />
-
----
+--
 
 ## **Step 8 — Launch a PSM Session**
 
