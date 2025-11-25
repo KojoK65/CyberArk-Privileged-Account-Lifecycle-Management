@@ -69,13 +69,17 @@ On the VM:
 Cloned the Windows platform in PVWA and configured key settings:
 
 - Password complexity  
-- Password rotation 
+- Password rotation  
 - Reconcile account settings  
 
 **Platform policy configured for password lifecycle automation ⚙️**  
-<img width="1920" height="1080" alt="PVWA-CPM-PSM-2025-11-10-15-42-26" src="https://github.com/user-attachments/assets/9be9118f-bf43-47d4-98ba-7f64a9e1a812" />
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9be9118f-bf43-47d4-98ba-7f64a9e1a812" alt="Platform Policy Configured" style="width:80%; height:auto;" />
+</div>
 
 ---
+
 
 ## **Step 5 — Assign Safe Permissions**
 
@@ -85,7 +89,7 @@ Prepared the Safe by configuring role-based access controls for members:
 - Retrieve Accounts  
 - Use Accounts
   
-*Safe members before adding the demo users.*
+**Safe members before adding the demo users.**
 
 <img width="1920" height="1080" alt="PVWA-CPM-PSM-2025-11-10-16-33-02" src="https://github.com/user-attachments/assets/8f2faa43-d8a2-44c6-a7da-f4e4db1a3cfa" />
 
@@ -94,7 +98,7 @@ Prepared the Safe by configuring role-based access controls for members:
 
 ## **Step 6 — Onboard Privileged Accounts**
 
-Go to **PVWA → Accounts View → Add Account** to add the demo users:
+Go to **PVWA → Accounts View → Add Account** to add the users:
 
 - **Platform:** WindowsLocal_Admin  
 - **Address:** `10.0.0.3`  
@@ -122,7 +126,6 @@ Validated and rotated the password:
   <img src="https://github.com/user-attachments/assets/ccc553fa-d89d-40f8-ad3c-a580c921416f" alt="CPM Verify/Change Success" style="width:75%; height:auto;" />
 </div>
 
---
 
 ## **Step 8 — Launch a PSM Session**
 
