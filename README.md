@@ -3,12 +3,10 @@
 A practical walkthrough of end-to-end CyberArk Privileged Access Management (PAM) workflows — from onboarding privileged accounts to applying platform policies, rotating credentials, and launching monitored PSM sessions.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c72d5b37-7967-4962-99ae-6cfdc75c0851" alt="Overview Image" width="300" />
+  <img src="https://github.com/user-attachments/assets/c72d5b37-7967-4962-99ae-6cfdc75c0851" alt="CyberArk Overview Icon" width="250" />
 </div>
 
 ---
-
-
 
 ## 🎯 **Objective**
 
@@ -25,19 +23,20 @@ Demonstrate core CyberArk PAS lifecycle operations, including:
 
 ## **Step 1 — Access PVWA**
 
-Log in to the Password Vault Web Access (PVWA) portal:
-
+Log in to the Password Vault Web Access (PVWA) portal:  
 `https://<PVWA_HOST>/PasswordVault/`
+
+**Purpose:** Access the central hub to manage privileged accounts and Safes.  
 
 **PVWA Dashboard — central hub for PAM operations 🧭**  
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c0a59876-e4b6-4cb5-a09d-425a1f9893ed" alt="PVWA Dashboard" style="width:80%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/c0a59876-e4b6-4cb5-a09d-425a1f9893ed" alt="PVWA Dashboard showing menus and Safes" style="width:80%; height:auto;" />
 </div>
 
 ---
 
-## **Step 2 — Created Privileged Accounts**
+## **Step 2 — Create Privileged Accounts**
 
 On the VM:
 
@@ -45,23 +44,26 @@ On the VM:
    - `LocalAdmin_Server1`
 2. Add the account to the **Administrators** group
 
+**Purpose:** Ensure the account has sufficient rights for testing privileged workflows.  
+
 **Privileged account created and granted admin rights 👥**  
 <div align="center">
   <img src="https://github.com/user-attachments/assets/366b106c-6c8a-41cd-82ed-3617b7de5a7d" alt="Creating LocalAdmin_Server1" style="width:80%; height:auto;" />
-  <img src="https://github.com/user-attachments/assets/f3b1fb04-17ad-4caf-a93d-30c188c26672" alt="Adding LocalAdmin_Server1 to Administrators" style="width:80%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/f3b1fb04-17ad-4caf-a93d-30c188c26672" alt="Adding LocalAdmin_Server1 to Administrators group" style="width:80%; height:auto;" />
 </div>
 
 ---
 
-## **Step 3 — Created a Safe**
+## **Step 3 — Create a Safe**
 
 1. Created a new Safe named **IT_Admins_Safe**  
 2. Added myself as the owner  
 3. Kept default retention settings
 
-**Safe created to securely hold privileged accounts 🔐**  
+**Purpose:** Safes store privileged credentials securely and manage access.  
+
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/5aae5f77-096f-40ea-99b6-528ddeadff90" alt="IT_Admins_Safe Created" style="width:80%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/5aae5f77-096f-40ea-99b6-528ddeadff90" alt="IT_Admins_Safe created in PVWA" style="width:80%; height:auto;" />
 </div>
 
 ---
@@ -74,10 +76,10 @@ Cloned the Windows platform in PVWA and configured key settings:
 - Password rotation  
 - Reconcile account settings  
 
-**Platform policy configured for password lifecycle automation ⚙️**  
+**Purpose:** Enforce security policies and automate password lifecycle.  
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/9be9118f-bf43-47d4-98ba-7f64a9e1a812" alt="Platform Policy Configured" style="width:80%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/9be9118f-bf43-47d4-98ba-7f64a9e1a812" alt="Windows platform cloned and configured" style="width:80%; height:auto;" />
 </div>
 
 ---
@@ -90,7 +92,9 @@ Prepared the Safe by configuring role-based access controls for members:
 - Retrieve Accounts  
 - Use Accounts  
 
-**Safe members before adding the demo users.**
+**Purpose:** Ensure only authorized users can access the Safe.  
+
+**Safe members before adding demo users:**  
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/8f2faa43-d8a2-44c6-a7da-f4e4db1a3cfa" alt="Safe Members Before Demo Users" style="width:80%; height:auto;" />
@@ -106,11 +110,11 @@ Go to **PVWA → Accounts View → Add Account** to add the users:
 - **Address:** `10.0.0.3`  
 - **User:** `LocalAdmin_Server1` / `Service_Account_SQL`  
 
-**Privileged accounts added and secured in the Vault ✅**  
+**Purpose:** Vault the accounts so passwords are managed and secured.  
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/33ba173a-a0da-4d44-88f8-05c97276d367" alt="Onboard Account 1" style="width:80%; height:auto;" />
-  <img src="https://github.com/user-attachments/assets/8c19888f-7189-4c68-a5b2-2372e8bdd57b" alt="Onboard Account 2" style="width:80%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/33ba173a-a0da-4d44-88f8-05c97276d367" alt="Onboarding LocalAdmin_Server1 to Safe" style="width:80%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/8c19888f-7189-4c68-a5b2-2372e8bdd57b" alt="Onboarding Service_Account_SQL to Safe" style="width:80%; height:auto;" />
 </div>
 
 ---
@@ -120,6 +124,8 @@ Go to **PVWA → Accounts View → Add Account** to add the users:
 Validated and rotated the password:
 
 **PVWA → Accounts View → LocalAdmin_Server1 → CPM Actions → Verify / Change**
+
+**Purpose:** Ensure the CPM successfully rotates and reconciles credentials.  
 
 **Password verified and reconciled successfully 🔁**  
 
@@ -141,11 +147,11 @@ During a PSM session:
 - Session is fully audited & recorded  
 - Keystrokes and actions are monitored  
 
-**PSM privileged session initiated and monitored 🎥**  
+**Purpose:** Demonstrate secure access and session monitoring for compliance.  
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/a859d8ae-af4a-4954-be2e-fcc7f198dcba" alt="Enter PSM Reason" style="width:80%; height:auto;" />
-  <img src="https://github.com/user-attachments/assets/7396d53e-b03e-47f7-832e-eaa115a5cd2a" alt="PSM Session Successful Launch" style="width:80%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/a859d8ae-af4a-4954-be2e-fcc7f198dcba" alt="Enter reason for PSM session" style="width:80%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/7396d53e-b03e-47f7-832e-eaa115a5cd2a" alt="PSM session successfully launched" style="width:80%; height:auto;" />
 </div>
 
 ---
