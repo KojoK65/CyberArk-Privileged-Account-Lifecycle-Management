@@ -1,9 +1,9 @@
-# **CyberArk Privileged Account Lifecycle Management**
+# **🔐 CyberArk Privileged Account Lifecycle Management**
 
 A practical walkthrough of end-to-end CyberArk Privileged Access Management (PAM) workflows — from onboarding privileged accounts to applying platform policies, rotating credentials, and launching monitored PSM sessions.
 
 <div align="center">
-  <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/c72d5b37-7967-4962-99ae-6cfdc75c0851" />
+  <img width="420" height="420" alt="image" src="https://github.com/user-attachments/assets/c72d5b37-7967-4962-99ae-6cfdc75c0851" />
 </div>
 
 ---
@@ -29,9 +29,13 @@ Log in to the Password Vault Web Access (PVWA) portal:
 `https://<PVWA_HOST>/PasswordVault/`
 
 **PVWA Dashboard — central hub for PAM operations 🧭**  
-![Screenshot](SS_01_PVWA_Dashboard.png)
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c0a59876-e4b6-4cb5-a09d-425a1f9893ed" alt="PVWA-CPM-PSM-2025-11-10-14-59-07" style="width:70%; height:auto;" />
+</div>
 
 ---
+
 
 ## **Step 2 — Create Privileged Accounts in AD**
 
@@ -158,5 +162,3 @@ By the end of this hands-on lifecycle demonstration, I successfully:
 🔁 Executed CPM Verify/Change workflows for credential lifecycle  
 🖥️ Launched monitored PSM sessions without ever exposing passwords  
 🎥 Reviewed audit logs and session recordings for compliance  
-
-A complete demonstration of **CyberArk Privileged Access Lifecycle Management** from creation → onboarding → securing → rotating → monitoring.  
