@@ -30,7 +30,7 @@ Log in to the Password Vault Web Access (PVWA) portal:
 **PVWA Dashboard — central hub for PAM operations 🧭**  
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c0a59876-e4b6-4cb5-a09d-425a1f9893ed" alt="PVWA Dashboard" style="width:75%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/c0a59876-e4b6-4cb5-a09d-425a1f9893ed" alt="PVWA Dashboard" style="width:80%; height:auto;" />
 </div>
 
 ---
@@ -45,8 +45,8 @@ On the VM:
 
 **Privileged account created and granted admin rights 👥**  
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/366b106c-6c8a-41cd-82ed-3617b7de5a7d" alt="Creating LocalAdmin_Server1" style="width:75%; height:auto;" />
-  <img src="https://github.com/user-attachments/assets/f3b1fb04-17ad-4caf-a93d-30c188c26672" alt="Adding LocalAdmin_Server1 to Administrators" style="width:75%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/366b106c-6c8a-41cd-82ed-3617b7de5a7d" alt="Creating LocalAdmin_Server1" style="width:80%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/f3b1fb04-17ad-4caf-a93d-30c188c26672" alt="Adding LocalAdmin_Server1 to Administrators" style="width:80%; height:auto;" />
 </div>
 
 ---
@@ -80,19 +80,19 @@ Cloned the Windows platform in PVWA and configured key settings:
 
 ---
 
-
 ## **Step 5 — Assign Safe Permissions**
 
 Prepared the Safe by configuring role-based access controls for members:
 
 - List Accounts  
 - Retrieve Accounts  
-- Use Accounts
-  
+- Use Accounts  
+
 **Safe members before adding the demo users.**
 
-<img width="1920" height="1080" alt="PVWA-CPM-PSM-2025-11-10-16-33-02" src="https://github.com/user-attachments/assets/8f2faa43-d8a2-44c6-a7da-f4e4db1a3cfa" />
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8f2faa43-d8a2-44c6-a7da-f4e4db1a3cfa" alt="Safe Members Before Demo Users" style="width:80%; height:auto;" />
+</div>
 
 ---
 
@@ -107,10 +107,9 @@ Go to **PVWA → Accounts View → Add Account** to add the users:
 **Privileged accounts added and secured in the Vault ✅**  
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/33ba173a-a0da-4d44-88f8-05c97276d367" alt="Onboard Account 1" style="width:75%; height:auto;" />
-  <img src="https://github.com/user-attachments/assets/8c19888f-7189-4c68-a5b2-2372e8bdd57b" alt="Onboard Account 2" style="width:75%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/33ba173a-a0da-4d44-88f8-05c97276d367" alt="Onboard Account 1" style="width:80%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/8c19888f-7189-4c68-a5b2-2372e8bdd57b" alt="Onboard Account 2" style="width:80%; height:auto;" />
 </div>
-
 
 ---
 
@@ -123,9 +122,10 @@ Validated and rotated the password:
 **Password verified and reconciled successfully 🔁**  
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/ccc553fa-d89d-40f8-ad3c-a580c921416f" alt="CPM Verify/Change Success" style="width:75%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/ccc553fa-d89d-40f8-ad3c-a580c921416f" alt="CPM Verify/Change Success" style="width:80%; height:auto;" />
 </div>
 
+---
 
 ## **Step 8 — Launch a PSM Session**
 
@@ -142,8 +142,8 @@ During a PSM session:
 **PSM privileged session initiated and monitored 🎥**  
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/a859d8ae-af4a-4954-be2e-fcc7f198dcba" alt="Enter PSM Reason" style="width:75%; height:auto;" />
-  <img src="https://github.com/user-attachments/assets/7396d53e-b03e-47f7-832e-eaa115a5cd2a" alt="PSM Session Successful Launch" style="width:75%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/a859d8ae-af4a-4954-be2e-fcc7f198dcba" alt="Enter PSM Reason" style="width:80%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/7396d53e-b03e-47f7-832e-eaa115a5cd2a" alt="PSM Session Successful Launch" style="width:80%; height:auto;" />
 </div>
 
 ---
