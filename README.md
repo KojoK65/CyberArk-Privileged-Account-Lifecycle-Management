@@ -31,52 +31,56 @@ Log in to the Password Vault Web Access (PVWA) portal:
 **PVWA Dashboard — central hub for PAM operations 🧭**  
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c0a59876-e4b6-4cb5-a09d-425a1f9893ed" alt="PVWA-CPM-PSM-2025-11-10-14-59-07" style="width:70%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/c0a59876-e4b6-4cb5-a09d-425a1f9893ed" alt="PVWA-CPM-PSM-2025-11-10-14-59-07" style="width:75%; height:auto;" />
 </div>
 
 ---
 
 
-## **Step 2 — Create Privileged Accounts in AD**
+## **Step 2 — Created Privileged Accounts**
 
-In the Domain Controller:
+On the VM:
 
-1. Open **Active Directory Users and Computers**  
-2. Create two demo privileged accounts:  
-   - `LocalAdmin_Server1`  
-   - `Service_Account_SQL`
+1. Create the privileged account:  
+   - `LocalAdmin_Server1`
+2. Add the account to the **Administrators** group
 
-**Privileged AD accounts created for onboarding 👥**  
-![Screenshot](SS_02_AD_NewUsers.png)
+**Privileged account created and granted admin rights 👥**  
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/366b106c-6c8a-41cd-82ed-3617b7de5a7d" alt="Creating LocalAdmin_Server1" style="width:75%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/f3b1fb04-17ad-4caf-a93d-30c188c26672" alt="Adding LocalAdmin_Server1 to Administrators" style="width:75%; height:auto;" />
+</div>
+
+---
+
+## **Step 3 — Created a Safe**
+
+1. Created a new Safe named **IT_Admins_Safe**  
+2. Added myself as the owner  
+3. Kept default retention settings
+
+**Safe created to securely hold privileged accounts 🔐**  
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5aae5f77-096f-40ea-99b6-528ddeadff90" alt="IT_Admins_Safe Created" style="width:80%; height:auto;" />
+</div>
 
 ---
 
-## **Step 3 — Create a Safe**
-
-Navigate to **PVWA → Administration → Safes → Add Safe**:
-
-- **Name:** `IT_Admins_Safe`
-- **Owner:** Yourself  
-- Keep default retention settings
-
-**Safe created to store privileged credentials securely 🔐**  
-![Screenshot](SS_03_Safe_Created.png)
-
----
 
 ## **Step 4 — Onboard Privileged Accounts**
 
-Go to **PVWA → Safes → IT_Admins_Safe → Add Account**
+Go to **PVWA → Accounts View → Add Account**
 
 For each account:
 
-- **Platform:** Windows Local / Windows Server  
+- **Platform:** WindowsLocal_Admin  
 - **Address:** `10.0.0.3`  
 - **User:** `LocalAdmin_Server1` / `Service_Account_SQL`  
 - **Secret:** Temporary password  
 
 **Privileged account added and secured in the Vault ✅**  
-![Screenshot](SS_04_Account_Added.png)
+<img width="1920" height="1080" alt="PVWA-CPM-PSM-2025-11-10-15-11-24" src="https://github.com/user-attachments/assets/33ba173a-a0da-4d44-88f8-05c97276d367" />
+<img width="1920" height="1080" alt="PVWA-CPM-PSM-2025-11-10-16-17-20" src="https://github.com/user-attachments/assets/a1aa1a46-87a4-4602-af54-21dbe98fad41" />
 
 ---
 
